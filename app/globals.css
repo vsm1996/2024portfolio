@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+'base-300': '#f1f8fe', 
+'base-200': '#e1effd',
+'base-100': '#bcdefb',
+'neutral-content': '#81c4f8',
+'neutral': '#3fa6f1',
+'accent-content': '#168be1',
+'accent': '#0a7ad6',
+'secondary-content': '#09579b',
+'secondary': '#0b4b81',
+'primary-content': '#0f3f6b',
+'primary': '#0a2847', 
+
+*/
+
+/* 
+lav
+'base-300': '#faf6fe',
+'base-200': '#f2ebfc',
+'base-100': '#e8dafa',
+          'neutral-content': '#d6bef4',
+          'neutral': '#b385ea',
+          'accent-content': '#a26ae2',
+          'accent': '#8c4bd2',
+          'secondary-content': '#7638b8',
+          'secondary': '#643297',
+          'primary-content': '#522a79',
+          'primary': '#371358',
+*/
+
+/* 
+lilac
+       'base-300': '#faf7fd',
+          'base-200': '#f2ecfb',
+          'base-100': '#e7dbf9',
+          'neutral-content': '#d5bff3',
+          'neutral': '#bb96ea',
+          'accent-content': '#a372df',
+          'accent': '#8a4fce',
+          'secondary-content': '#743cb4',
+          'secondary': '#633693',
+          'primary-content': '#512c77',
+          'primary': '#351556',
+*/
+
+/* 
+'conifer': {
+        '50': '#f4fbea',
+        '100': '#e6f5d2',
+        '200': '#ceeda9',
+        '300': '#aedf77',
+        '400': '#9bd35f',
+        '500': '#71b32f',
+        '600': '#568f21',
+        '700': '#436d1e',
+        '800': '#38571d',
+        '900': '#304a1d',
+        '950': '#17280b',
+    },
+    
+*/
