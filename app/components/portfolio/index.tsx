@@ -1,6 +1,7 @@
 import { ProjectType } from '@/app/types'
 
 import Project from './project'
+import ProjectCard from './project'
 
 const projects: ProjectType[] = [{
   title: 'The Traveler',
@@ -11,9 +12,10 @@ const projects: ProjectType[] = [{
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className='w-full h-dvh'>
-      {projects.map(({ title, date, img, src }, index) => <Project key={index} title={title} date={date} img={img} src={src} />)}
-
+    <section id="portfolio" className='w-full py-2 px-12 md:px-24'>
+      {projects.map(({ title, date, img, src }, index) => (
+        <ProjectCard key={index} title={title} date={date} img={img} src={src} />
+      ))}
     </section >
   )
 }

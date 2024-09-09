@@ -2,24 +2,31 @@ import { ProjectType } from "@/app/types"
 import Image from "next/image"
 import Link from "next/link"
 
-const Project = ({ title, date, img, src }: ProjectType) => {
+const ProjectCard = ({ title, date, img, src }: ProjectType) => {
   return (
-    <div className="w-full">
-      <div className="w-full">
+    <div className=" flex flex-col
+    w-full lg:w-1/4 h-full rounded-md bg-secondary text-neutral-content self-stretch 
+      ease-in-out duration-300 transition hover:transition-all hover:bg-secondary-content
+      hover:drop-shadow-2xl hover:-translate-y-2 ">
+      <Link target='_blank' href={src} className='relative w-full h-full'>
         <Image
-          sizes="200px"
-          width={200}
-          height={200}
-          alt={title}
           src={img}
+          alt={title || ''}
+          sizes="300px"
+          // fill
+          width={300}
+          height={300}
+          className='object-contain object-center h-full w-full rounded-md'
         />
-      </div>
-      <p>{title}</p>
+      </Link>
 
-      <Link href={src}>Website</Link>
-      <span>{date}</span>
+      <div className="cursor-pointer w-full h-full p-4 flex flex-col gap-2">
+        <p>{title}</p>
+        <p>{date}</p>
+      </div>
+
     </div>
   )
 }
 
-export default Project
+export default ProjectCard
