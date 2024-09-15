@@ -3,6 +3,7 @@ import Link from "next/link";
 import Clip from "./components/clippy-example";
 import Hero from "./components/hero";
 import Portfolio from "./components/portfolio";
+import EmailForm from "./components/EmailForm";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       {/* <Clip /> */}
       <Hero />
       <Portfolio />
+      <EmailForm />
     </main>
   );
 }

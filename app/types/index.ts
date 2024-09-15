@@ -1,6 +1,7 @@
 export interface ProjectType {
-  date: string,
+  desc: string,
   title: string,
+  tech: string[],
   img: string,
   src: string
 }
