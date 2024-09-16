@@ -4,7 +4,8 @@ import Link from "next/link"
 
 const ProjectCard2 = ({ title, img, src, desc, tech }: ProjectType) => {
   return (
-    <div className=" flex flex-col
+    // glass
+    <div className="group flex flex-col
       w-full lg:w-1/4 h-auto rounded-md bg-secondary-content text-white self-stretch 
       ease-in-out duration-300 transition hover:transition-all hover:bg-secondary
       hover:drop-shadow-2xl hover:-translate-y-2 ">
@@ -20,10 +21,11 @@ const ProjectCard2 = ({ title, img, src, desc, tech }: ProjectType) => {
         />
       </Link>
 
-      <div className="cursor-pointer w-full h-[200px] p-4 flex flex-col gap-2">
-        <p>{title}</p>
-        <p>{desc}</p>
-        <p>Technologies: {tech.map(text => text + ' ')}</p>
+      {/* backdrop-blur */}
+      <div className="cursor-pointer w-full h-full p-4 flex flex-col gap-2">
+        <h2 className="text-2xl group-hover:underline">{title}</h2>
+        <p className="text-md">{desc}</p>
+        <small className="text-sm">Technologies: {tech.map((text, index) => text + (index !== (tech.length - 1) && ', '))}</small>
       </div>
 
     </div>

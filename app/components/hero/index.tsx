@@ -4,7 +4,7 @@ import Navbar from '../navbar'
 
 const Hero = () => {
   return (
-    <section className='w-full bg-gradient-to-b from-primary-content to-accent-content text-white' style={{ clipPath: 'polygon(0 0, 100% 0%, 100% 79%, 0 100%)' }}>
+    <section id='about' className='w-full bg-gradient-to-b from-primary-content to-accent-content text-white' style={{ clipPath: 'polygon(0 0, 100% 0%, 100% 79%, 0 100%)' }}>
       <Navbar />
       <div className='px-12 mt-12 pb-16 md:px-24 md:pt-24 md:pb-36 flex flex-col items-center justify-between md:flex-row'>
         <div className='mt-6 md:m-0'>
