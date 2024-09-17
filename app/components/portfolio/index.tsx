@@ -34,10 +34,17 @@ const projects: ProjectType[] = [
   },
   {
     title: 'Photosnap',
-    desc: 'Main marketing site for global fintech company.',
-    tech: ['NextJS', 'SCSS', 'Node', 'Vercel'],
+    desc: 'Fully built front-end ReactJS site for photographers and visual story tellers.',
+    tech: ['React', 'CSS', 'Node', 'Vercel'],
     img: '/assets/img/photosnap.png',
     src: 'https://photosnap-roan.vercel.app/',
+  },
+  {
+    title: 'Lotus Art',
+    desc: 'Personal art portfolio and store!',
+    tech: ['React', 'CSS', 'Node', 'Vercel'],
+    img: '/assets/img/lotusart.png',
+    src: 'https://lotus-art.vercel.app/',
   },
 ]
 
