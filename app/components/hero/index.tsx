@@ -12,7 +12,7 @@ const Hero = () => {
             Vanessa
             <span className='text-neutral-content text-balance'> Martin </span>
           </h1>
-          <p className='mb-6'>Development, Deployment, and Maintenance.</p>
+          <p className='mb-6'>Website Development, Deployment, and Maintenance.</p>
         </div>
         <Link href='#porftolio' className='p-4 border rounded-[16px] hover:text-neutral-content hover:border-current hover:drop-shadow-lg'>My Work</Link>
         {/* <p className='w-1/2 text-xl'>I&apos;m a Full-stack Developer in the Bay Area.
