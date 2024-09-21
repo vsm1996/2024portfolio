@@ -50,7 +50,7 @@ const projects: ProjectType[] = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className='w-full py-2 px-12 md:px-24 flex items-center gap-4 flex-col lg:flex-row'>
+    <section id="portfolio" className='w-full py-10 px-12 md:px-24 flex items-center gap-4 flex-col lg:flex-row'>
       {projects.map(({ title, img, src, desc, tech }, index) => (
         <ProjectCard key={index} title={title} tech={tech} desc={desc} img={img} src={src} />
       ))}
