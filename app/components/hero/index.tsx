@@ -17,7 +17,7 @@ const Hero = () => {
           </h1>
           <p className='mb-6'>Website Development, Deployment, and Maintenance.</p>
         </div>
-        <Link href='#porftolio' className='p-4 border rounded-[16px] hover:text-neutral-content hover:border-current hover:drop-shadow-lg'>My Work</Link>
+        <Link href='#portfolio' className='p-4 border rounded-[16px] hover:text-neutral-content hover:border-current hover:drop-shadow-lg'>My Work</Link>
         {/* <p className='w-1/2 text-xl'>I&apos;m a Full-stack Developer in the Bay Area.
 
 My passion is creating responsive, intuitive UI/UX and a secure, fast back-end.
