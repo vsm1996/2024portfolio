@@ -46,8 +46,8 @@ const ContactUs = () => {
   return (
     // border border-t-2 border-l-2 border-r-2 border-b-0 rounded-xl rounded-b-none 
     // style={{ clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0 100%)' }}
-    <section className='w-full mx-auto mt-14 flex flex-col items-center text-white pt-40 pb-16 bg-gradient-to-b from-accent-content to-primary-content' id='contact' style={{ clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0 100%)' }}>
-      <h2 className='w-2/4 text-2xl text-center text-balance mb-10'>
+    <section className='w-full mx-auto mt-14 flex flex-col items-center text-white pt-64 pb-16 bg-gradient-to-b from-accent-content to-primary-content' id='contact' style={{ clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0 100%)' }}>
+      <h2 className='w-full md:w-2/4 text-2xl text-center text-balance mb-16'>
         I&apos;m always excited to collaborate on new projects or discuss opportunities.
          Feel free to reach out!
       </h2>

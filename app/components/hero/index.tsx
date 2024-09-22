@@ -7,7 +7,7 @@ import Waves from "@/public/assets/svg/waves.svg"
 
 const Hero = () => {
   return (
-    <section id='about' className='relative w-full bg-gradient-to-b from-primary-content to-accent-content text-white pb-8 md:pb-2' style={{ clipPath: 'polygon(0 0, 100% 0%, 100% 79%, 0 100%)' }}>
+    <section id='about' className='relative w-full bg-gradient-to-b from-primary-content to-accent-content text-white pb-16 md:pb-12' style={{ clipPath: 'polygon(0 0, 100% 0%, 100% 79%, 0 100%)' }}>
       <Navbar />
       <div className=' px-12 mt-12 pb-16 md:px-24 md:pt-24 md:pb-36 flex flex-col items-center justify-between md:flex-row'>
         <div className='group mt-6 md:m-0'>
