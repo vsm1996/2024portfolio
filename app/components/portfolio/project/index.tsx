@@ -6,8 +6,8 @@ const ProjectCard = ({ title, img, src, desc, tech }: ProjectType) => {
   return (
     // glass
     <div className="group flex flex-col
-      w-full h-auto rounded-md bg-secondary-content text-white self-stretch 
-      ease-in-out duration-300 transition hover:transition-all hover:bg-secondary
+      w-full h-auto rounded-lg bg-secondary-content/75 text-white self-stretch 
+      ease-in-out duration-300 transition hover:transition-all hover:bg-secondary/85
       hover:drop-shadow-2xl hover:-translate-y-2 ">
       <Link target='_blank' href={src} className='relative self-start'>
         <Image
