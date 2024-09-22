@@ -2,11 +2,11 @@ import { ProjectType } from "@/app/types"
 import Image from "next/image"
 import Link from "next/link"
 
-const ProjectCard2 = ({ title, img, src, desc, tech }: ProjectType) => {
+const ProjectCard = ({ title, img, src, desc, tech }: ProjectType) => {
   return (
     // glass
     <div className="group flex flex-col
-      w-full lg:w-1/4 h-auto rounded-md bg-secondary-content text-white self-stretch 
+      w-full h-auto rounded-md bg-secondary-content text-white self-stretch 
       ease-in-out duration-300 transition hover:transition-all hover:bg-secondary
       hover:drop-shadow-2xl hover:-translate-y-2 ">
       <Link target='_blank' href={src} className='relative w-full h-auto self-start'>
@@ -32,4 +32,4 @@ const ProjectCard2 = ({ title, img, src, desc, tech }: ProjectType) => {
   )
 }
 
-export default ProjectCard2
+export default ProjectCard

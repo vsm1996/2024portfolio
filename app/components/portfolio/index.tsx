@@ -1,6 +1,5 @@
 import { ProjectType } from '@/app/types'
 
-import Project from './project'
 import ProjectCard from './project'
 
 const projects: ProjectType[] = [
@@ -50,7 +49,7 @@ const projects: ProjectType[] = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className='w-full py-10 px-12 md:px-24 flex items-center gap-4 flex-col lg:flex-row'>
+    <section id="portfolio" className='w-full pt-20 pb-6 px-12 md:px-24 grid grid-rows-6 grid-flow-col gap-6 md:grid-rows-3 md:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3'>
       {projects.map(({ title, img, src, desc, tech }, index) => (
         <ProjectCard key={index} title={title} tech={tech} desc={desc} img={img} src={src} />
       ))}
