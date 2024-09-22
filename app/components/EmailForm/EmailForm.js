@@ -44,6 +44,7 @@ const ContactUs = () => {
 
   return (
     // border border-t-2 border-l-2 border-r-2 border-b-0 rounded-xl rounded-b-none 
+    // style={{ clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0 100%)' }}
     <section className='w-full mx-auto mt-14 flex flex-col items-center text-white pt-40 pb-16 bg-gradient-to-b from-accent-content to-primary-content' id='contact' style={{ clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0 100%)' }}>
       <h2 className='text-2xl mb-7'>How can I help you?</h2>
       <form ref={form} onSubmit={sendEmail} className={styles.form}>
