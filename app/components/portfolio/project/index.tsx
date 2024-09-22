@@ -25,7 +25,7 @@ const ProjectCard = ({ title, img, src, desc, tech }: ProjectType) => {
       <div className="cursor-pointer w-full h-full p-4 flex flex-col gap-2">
         <h2 className="text-2xl group-hover:underline">{title}</h2>
         <p className="text-md">{desc}</p>
-        <small className="text-sm">Technologies: {tech.map((text, index) => text + (index !== (tech.length - 1) && ', '))}</small>
+        <small className="text-sm">Technologies: {tech.map((text, index) => text + (index !== (tech.length - 1) ? ', ' : ''))}</small>
       </div>
 
     </div>
