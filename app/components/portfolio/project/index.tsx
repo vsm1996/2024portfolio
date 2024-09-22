@@ -9,15 +9,15 @@ const ProjectCard = ({ title, img, src, desc, tech }: ProjectType) => {
       w-full h-auto rounded-md bg-secondary-content text-white self-stretch 
       ease-in-out duration-300 transition hover:transition-all hover:bg-secondary
       hover:drop-shadow-2xl hover:-translate-y-2 ">
-      <Link target='_blank' href={src} className='relative w-full h-auto self-start'>
+      <Link target='_blank' href={src} className='relative self-start'>
         <Image
           src={img}
           alt={title || ''}
-          sizes="300px"
+          sizes="100vw"
           // fill
-          width={300}
-          height={300}
-          className='object-contain object-top h-full w-full rounded-md'
+          width={0}
+          height={0}
+          className='object-contain object-top w-full h-auto rounded-md'
         />
       </Link>
 
