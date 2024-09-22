@@ -1,6 +1,7 @@
 import Hero from "./components/hero";
 import Portfolio from "./components/portfolio";
 import EmailForm from "./components/EmailForm";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
