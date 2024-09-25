@@ -28,7 +28,7 @@ const Hero = () => {
 
             Mission — to explore the intersection of art and technology.</p> */}
 
-        <Link href='/assets/res/vanessa-martin-resume.docx' download="VanessaMartin_Resume.docx" className='p-4 text-lg border rounded-[16px] ease-in-out duration-300 animate-bounce hover:text-gold-base hover:border-current hover:drop-shadow-lg hover:transition-all'>My Resume</Link>
+        <Link href='/assets/res/vanessa-martin-resume.docx' download="VanessaMartin_Resume.docx" className='p-4 text-lg text-nowrap border rounded-[16px] ease-in-out duration-300 animate-bounce hover:text-gold-base hover:border-current hover:drop-shadow-lg hover:transition-all'>My Resume</Link>
 
 
       </div>
