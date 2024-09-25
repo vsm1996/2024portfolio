@@ -1,4 +1,6 @@
+'use client'
 import { ProjectType } from '@/app/types'
+import { useIntersectionObserver } from '@/app/utlis/hooks/useIntersectionObserver'
 
 import ProjectCard from './project'
 
@@ -48,10 +50,12 @@ const projects: ProjectType[] = [
 ]
 
 const Portfolio = () => {
+  const [sectionRef, isVisible] = useIntersectionObserver();
+
   return (
-    <section id="portfolio" className='w-full pt-20 pb-6 px-12 md:px-24 grid grid-rows-6 grid-flow-col gap-6 md:grid-rows-3 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3'>
+    <section id="portfolio" className='w-full pt-20 pb-6 px-12 md:px-24 grid grid-rows-6 grid-flow-col gap-6 md:grid-flow-row md:grid-rows-3 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3'>
       {projects.map(({ title, img, src, desc, tech }, index) => (
-        <ProjectCard key={index} title={title} tech={tech} desc={desc} img={img} src={src} />
+        <ProjectCard key={index} title={title} tech={tech} desc={desc} img={img} src={src} index={index} />
       ))}
     </section >
   )

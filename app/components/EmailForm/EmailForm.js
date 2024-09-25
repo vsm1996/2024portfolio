@@ -4,12 +4,16 @@
 import { useRef, useState } from 'react'
 import emailjs, { init } from '@emailjs/browser'
 
+import { useIntersectionObserver } from '@/app/utlis/hooks/useIntersectionObserver'
+
 import styles from './EmailForm.module.css'
 import Footer from '../footer';
 
 init('_hJ5jDJM8i0Pf1CvS')
 
 const ContactUs = () => {
+  const [sectionRef, isVisible] = useIntersectionObserver();
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -46,7 +50,14 @@ const ContactUs = () => {
   return (
     // border border-t-2 border-l-2 border-r-2 border-b-0 rounded-xl rounded-b-none 
     // style={{ clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0 100%)' }}
-    <section className='w-full mx-auto mt-14 flex flex-col items-center text-white pt-64 pb-16 bg-gradient-to-b from-accent-content to-primary-content' id='contact' style={{ clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0 100%)' }}>
+    <section 
+      ref={sectionRef} 
+      className={`w-full opacity-0 mx-auto mt-14 flex flex-col items-center text-white pt-64 pb-16 bg-gradient-to-b from-accent-content to-primary-content
+        ${isVisible ? `motion-safe:animate-fadeInUp` : ''}
+        `} 
+      id='contact' 
+      style={{ clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0 100%)' }}
+    >
       <h2 className='w-full md:w-2/4 text-2xl text-center text-balance mb-16'>
         I&apos;m always excited to collaborate on new projects or discuss opportunities.
          Feel free to reach out!
@@ -64,7 +75,7 @@ const ContactUs = () => {
           Message
         </label>
         <textarea className='w-4/5  xl:w-3/5 border-none rounded-2xl mb-4 text-black p-2' name='message' value={message} id='message' onChange={handleMessageChange} />
-        <input className='p-4 border hover:text-accent-content hover:bg-white hover:border-current hover:drop-shadow-lg w-4/5  xl:w-3/5 rounded-2xl mt-4 inputsend hover:transition-all ease-in-out duration-300' type='submit' value='Send' />
+        <input className='cursor-pointer p-4 border hover:text-accent-content hover:bg-white hover:border-current hover:drop-shadow-lg w-4/5  xl:w-3/5 rounded-2xl mt-4 inputsend hover:transition-all ease-in-out duration-300' type='submit' value='Send' />
       </form>
       <Footer />
     </section>
