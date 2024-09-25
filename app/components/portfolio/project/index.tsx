@@ -12,7 +12,7 @@ const ProjectCard = ({ title, img, src, desc, tech, index }: ProjectCardType) =>
     <div
       ref={cardRef}
       className={`group relative flex flex-col opacity-0 w-full h-auto min-h-[465px] max-h-[500px] text-white self-stretch
-    transition-all ease-in-out duration-500 ${isVisible ? `motion-safe:animate-fadeInUp delay-700` : ''}`}
+    transition-all ease-in-out duration-500 ${isVisible ? `motion-safe:animate-fadeInUp delay-[${index} * 2000ms]` : ''}`}
     >
       <div className="flex flex-col transition-all ease-in-out duration-500 rounded-lg bg-secondary-content/75 group-hover:bg-secondary/85 group-hover:drop-shadow-2xl group-hover:scale-95 h-full">
         <Link target='_blank' href={src} className='relative self-start'>
