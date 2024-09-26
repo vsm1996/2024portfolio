@@ -41,11 +41,11 @@ const projects: ProjectType[] = [
     src: 'https://photosnap-roan.vercel.app/',
   },
   {
-    title: 'Lotus Art',
-    desc: 'Personal art portfolio and store!',
-    tech: ['React', 'CSS', 'Node', 'Vercel'],
-    img: '/assets/img/lotusart.png',
-    src: 'https://lotus-art.vercel.app/',
+    title: 'PlayStation',
+    desc: 'Marketing site of top leading gaming company, specializing in branding, product, and community fun!',
+    tech: ['jQuery', 'CSS', 'React', 'Netlify'],
+    img: '/assets/img/playstation.png',
+    src: 'https://www.playstation.com/en-us/',
   },
 ]
 
