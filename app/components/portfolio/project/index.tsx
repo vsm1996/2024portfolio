@@ -5,7 +5,7 @@ import Link from "next/link"
 import { useIntersectionObserver } from '@/app/utlis/hooks/useIntersectionObserver'
 
 
-const ProjectCard = ({ title, img, src, desc, tech, index }: ProjectCardType) => {
+const ProjectCard = ({ title, img, src, desc, tech, index, role }: ProjectCardType) => {
   const [cardRef, isVisible] = useIntersectionObserver();
   return (
     // glass
@@ -28,9 +28,10 @@ const ProjectCard = ({ title, img, src, desc, tech, index }: ProjectCardType) =>
         </Link>
 
         {/* backdrop-blur */}
-        <div className="cursor-pointer w-full h-full p-4 flex flex-col gap-2">
+        <div className="cursor-pointer w-full h-full p-4 flex flex-col gap-3">
           <h2 className="text-2xl group-hover:underline">{title}</h2>
           <p className="text-md">{desc}</p>
+          <small className="text-sm group-hover:text-gold-base group-hover:animate-bounce">Role: {role}</small>
           <small className="text-sm">Technologies: {tech.map((text, index) => text + (index !== (tech.length - 1) ? ', ' : ''))}</small>
         </div>
 
