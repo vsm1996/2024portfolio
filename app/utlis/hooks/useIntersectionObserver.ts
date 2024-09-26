@@ -23,7 +23,7 @@ export const useIntersectionObserver = (): IntersectionObserverHook => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.35 } // Trigger when 35% of the element is visible
+      { threshold: 0.33 } // Trigger when 33% of the element is visible
     );
 
     const currentElement = elementRef.current;

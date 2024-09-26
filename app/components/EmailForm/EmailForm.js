@@ -58,7 +58,7 @@ const ContactUs = () => {
       id='contact' 
       style={{ clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0 100%)' }}
     >
-      <h2 className='w-full md:w-2/4 text-2xl text-center text-balance mb-16'>
+      <h2 className='w-full md:w-2/4 text-2xl text-center text-balance mb-16 hover:text-gold-base hover:motion-safe:animate-wiggle'>
         I&apos;m always excited to collaborate on new projects or discuss opportunities.
          Feel free to reach out!
       </h2>
