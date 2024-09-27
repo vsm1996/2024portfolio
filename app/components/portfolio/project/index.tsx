@@ -16,14 +16,16 @@ const ProjectCard = ({ title, img, src, desc, tech, index, role }: ProjectCardTy
     >
       <div className="flex flex-col transition-all ease-in-out duration-500 rounded-lg bg-secondary-content/75 group-active:bg-secondary/95 group-active:scale-90  group-hover:bg-secondary/85 group-hover:drop-shadow-2xl group-hover:scale-95 h-full">
         <Link target='_blank' href={src} className='w-full h-full relative' aria-label={`Link to ${title} project`}>
-          <Image
-            src={img}
-            alt={title || ''}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className='object-cover object-top w-full h-auto rounded-md
+          <div className="relative w-full h-[300px]">
+            <Image
+              src={img}
+              alt={title || ''}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className='object-cover object-top w-full h-auto rounded-md
             active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300 '
-          />
+            />
+          </div>
         </Link>
 
         {/* backdrop-blur */}
