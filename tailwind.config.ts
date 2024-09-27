@@ -32,6 +32,17 @@ const config: Config = {
             opacity: '1',
           },
         },
+        fadeInAndOut: {
+          '0%': {
+            opacity: '0',
+          },
+          '10%': {
+            opacity: '1',
+          },
+          '100%': {
+            opacity: '0',
+          },
+        },
         fadeInUp: {
           '0%': {
             opacity: '0',
@@ -53,12 +64,13 @@ const config: Config = {
           },
         },
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
+          '0%, 100%': { transform: 'rotate(-2deg)' },
+          '50%': { transform: 'rotate(2deg)' },
         }
       },
       animation: {
         wiggle: 'wiggle 0.6s ease-in-out infinite',
+        fadeInAndOut: 'fadeInAndOut 5s ease-in-out forwards',
         fadeIn: 'fadeIn 0.6s ease-out forwards',
         fadeInUp: 'fadeInUp 0.6s ease-out forwards',
         fadeInRight: 'fadeInRight 0.6s ease-out forwards',

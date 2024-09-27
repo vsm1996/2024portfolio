@@ -12,9 +12,9 @@ const ProjectCard = ({ title, img, src, desc, tech, index, role }: ProjectCardTy
     <div
       ref={cardRef}
       className={`group relative flex flex-col opacity-0 w-full h-auto min-h-[465px] max-h-[500px] text-white self-stretch
-    transition-all ease-in-out duration-500 ${isVisible ? `motion-safe:animate-fadeInUp delay-[${index} * 2000ms]` : ''}`}
+      transition-all ease-in-out duration-500 ${isVisible ? `motion-safe:animate-fadeInUp delay-[${index} * 2000ms]` : ''}`}
     >
-      <div className="flex flex-col transition-all ease-in-out duration-500 rounded-lg bg-secondary-content/75 group-hover:bg-secondary/85 group-hover:drop-shadow-2xl group-hover:scale-95 h-full">
+      <div className="flex flex-col transition-all ease-in-out duration-500 rounded-lg bg-secondary-content/75 group-active:bg-secondary/95 group-active:scale-90  group-hover:bg-secondary/85 group-hover:drop-shadow-2xl group-hover:scale-95 h-full">
         <Link target='_blank' href={src} className='relative self-start'>
           <Image
             src={img}
@@ -23,7 +23,8 @@ const ProjectCard = ({ title, img, src, desc, tech, index, role }: ProjectCardTy
             // fill
             width={0}
             height={0}
-            className='object-contain object-top w-full h-auto rounded-md aspect-w-4 aspect-h-3'
+            className='object-contain object-top w-full h-auto rounded-md aspect-w-4 aspect-h-3
+            active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300 '
           />
         </Link>
 

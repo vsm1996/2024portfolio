@@ -17,16 +17,26 @@ const ContactUs = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [alert, setAlert] = useState('')
   const form = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault()
 
+    if(message.name < 2) setAlert('Must add name')
+    if(message.email < 2) setAlert('Must add email')
+    if(message.length < 3) setAlert('Must add message')
+
     emailjs.sendForm('service_e9qathj', 'template_u7s451w', form.current, '_hJ5jDJM8i0Pf1CvS')
       .then((result) => {
         console.log(result.text)
+        setAlert('Thank you!')
+        setTimeout(()=>{
+          setAlert('')
+        }, 5000)
       }, (error) => {
         console.log(error.text)
+        setAlert(error.error)
       })
 
     setName('')
@@ -49,7 +59,6 @@ const ContactUs = () => {
 
   return (
     // border border-t-2 border-l-2 border-r-2 border-b-0 rounded-xl rounded-b-none 
-    // style={{ clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0 100%)' }}
     <section 
       ref={sectionRef} 
       className={`w-full opacity-0 mx-auto mt-14 flex flex-col items-center text-white pt-64 pb-16 bg-gradient-to-b from-accent-content to-primary-content
@@ -62,7 +71,10 @@ const ContactUs = () => {
         I&apos;m always excited to collaborate on new projects or discuss opportunities.
          Feel free to reach out!
       </h2>
-      <form ref={form} onSubmit={sendEmail} className='w-10/12 md:w-6/12 xl:w-5/12 mt-4 mx-0 mb-8 p-8 flex flex-col items-center justify-center rounded-xl bg-neutral-content/10 hover:bg-neutral-content/20 hover:transition-all ease-in-out duration-300'>
+      <form ref={form} onSubmit={sendEmail} className='w-10/12 md:w-6/12 xl:w-5/12 mt-4 mx-0 mb-8 p-8 
+      flex flex-col items-center justify-center rounded-xl bg-neutral-content/10 
+      hover:bg-neutral-content/20 hover:drop-shadow-lg hover:transition-all ease-in-out duration-300'
+      >
         <label className='w-4/5  xl:w-3/5 border-none rounded-2xl mb-4' htmlFor='name'>
           Name
         </label>
@@ -75,7 +87,7 @@ const ContactUs = () => {
           Message
         </label>
         <textarea className='w-4/5  xl:w-3/5 border-none rounded-2xl mb-4 text-black p-2' name='message' value={message} id='message' onChange={handleMessageChange} />
-        <input className='cursor-pointer p-4 border hover:text-accent-content hover:bg-white hover:border-current hover:drop-shadow-lg w-4/5  xl:w-3/5 rounded-2xl mt-4 inputsend hover:transition-all ease-in-out duration-300' type='submit' value='Send' />
+        <input className='cursor-pointer p-4 border hover:text-accent-content hover:bg-white hover:drop-shadow-lg w-4/5  xl:w-3/5 rounded-2xl mt-4 inputsend hover:transition-all active:scale-95 ease-in-out duration-300' type='submit' value='Send' />
       </form>
       <Footer />
     </section>
