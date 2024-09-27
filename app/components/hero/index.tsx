@@ -28,8 +28,7 @@ const Hero = () => {
 
             Mission — to explore the intersection of art and technology.</p> */}
 
-        <Link href='/assets/res/vanessa-martin-resume.docx' download="VanessaMartin_Resume.docx" className='p-4 text-lg text-nowrap border rounded-[16px] mt-4 lg:mt-0 ease-in-out duration-300 animate-bounce hover:text-gold-base hover:border-current hover:drop-shadow-lg hover:transition-all active:scale-95'>My Resume</Link>
-
+        <Link href='/assets/res/vanessa-martin-resume.docx' download="VanessaMartin_Resume.docx" aria-label="Button to download Vanessa's Resume" className='p-4 text-lg text-nowrap border rounded-[16px] mt-4 lg:mt-0 ease-in-out duration-300 animate-bounce hover:text-gold-base hover:border-current hover:drop-shadow-lg hover:transition-all active:scale-95'>My Resume</Link>
 
       </div>
       {/* <Image src={Waves} alt="" className='w-full absolute top-0 left-0' /> */}

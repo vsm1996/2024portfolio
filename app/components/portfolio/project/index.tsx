@@ -15,7 +15,7 @@ const ProjectCard = ({ title, img, src, desc, tech, index, role }: ProjectCardTy
       transition-all ease-in-out duration-500 ${isVisible ? `motion-safe:animate-fadeInUp delay-[${index} * 2000ms]` : ''}`}
     >
       <div className="flex flex-col transition-all ease-in-out duration-500 rounded-lg bg-secondary-content/75 group-active:bg-secondary/95 group-active:scale-90  group-hover:bg-secondary/85 group-hover:drop-shadow-2xl group-hover:scale-95 h-full">
-        <Link target='_blank' href={src} className='relative self-start'>
+        <Link target='_blank' href={src} className='relative self-start' aria-label={`Link to ${title} project`}>
           <Image
             src={img}
             alt={title || ''}
