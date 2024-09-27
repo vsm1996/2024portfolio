@@ -13,7 +13,7 @@ const Footer = () => {
         href={'https://www.linkedin.com/in/vsm1996'}
         aria-label="Link to Vanessa's LinkedIn Profile"
       >
-        <Image width={50} src={LinkedInLogo} alt='linkedin logo' className='group-hover:scale-125 group-active:scale-100' />
+        <Image width={70} src={LinkedInLogo} alt='linkedin logo' className='group-hover:scale-125 group-active:scale-100' />
       </Link>
       <Link
         className='group relative p-7 hover:motion-safe:animate-bounce ease-in-out duration-300 hover:transition-all'
@@ -21,7 +21,7 @@ const Footer = () => {
         href={'https://github.com/vsm1996/'}
         aria-label="Link to Vanessa's GitHub Profile"
       >
-        <Image width={50} src={GithubLogo} alt='github logo' className='group-hover:scale-125 group-active:scale-100' />
+        <Image width={70} src={GithubLogo} alt='github logo' className='group-hover:scale-125 group-active:scale-100' />
       </Link>
     </div>
   )
