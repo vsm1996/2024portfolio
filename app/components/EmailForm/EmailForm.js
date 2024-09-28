@@ -62,12 +62,12 @@ const ContactUs = () => {
     <section 
       ref={sectionRef} 
       className={`w-full opacity-0 mx-auto mt-14 flex flex-col items-center text-white pt-64 pb-16 bg-gradient-to-b from-accent-content to-primary-content
-        ${isVisible ? `motion-reduce:animate-fadeInUp` : ''}
+        ${isVisible ? `animate-fadeInUp` : ''}
         `} 
       id='contact' 
       style={{ clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0 100%)' }}
     >
-      <h2 className='w-full md:w-2/4 text-2xl text-center text-balance mb-16 hover:text-gold-base hover:motion-reduce:animate-wiggle'>
+      <h2 className='w-full md:w-2/4 text-2xl text-center text-balance mb-16 hover:text-gold-base hover:animate-wiggle'>
         I&apos;m always excited to collaborate on new projects or discuss opportunities.
          Feel free to reach out!
       </h2>
