@@ -69,11 +69,10 @@ const config: Config = {
         }
       },
       animation: {
-        wiggle: 'wiggle 0.6s ease-in-out infinite',
-        fadeInAndOut: 'fadeInAndOut 5s ease-in-out forwards',
-        fadeIn: 'fadeIn 0.6s ease-out forwards',
-        fadeInUp: 'fadeInUp 0.6s ease-out forwards',
-        fadeInRight: 'fadeInRight 0.6s ease-out forwards',
+        wiggle: 'wiggle 0.9s ease-in-out infinite',
+        fadeIn: 'fadeIn 0.9s ease-out forwards',
+        fadeInUp: 'fadeInUp 0.9s ease-out forwards',
+        fadeInRight: 'fadeInRight 0.9s ease-out forwards',
       },
     },
   },
