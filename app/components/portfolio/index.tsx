@@ -1,6 +1,8 @@
 'use client'
 import { ProjectType } from '@/app/types'
 import ProjectCard from './project'
+import AboutSection from '../about'
+import React from 'react'
 
 const projects: ProjectType[] = [
   {
@@ -56,11 +58,14 @@ const projects: ProjectType[] = [
 const Portfolio = () => {
 
   return (
-    <section id="portfolio" className='w-full pt-20 pb-6 px-12 md:px-24 grid grid-rows-6 grid-flow-col gap-6 md:grid-flow-row md:grid-rows-3 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3'>
-      {projects.map(({ title, img, src, desc, tech, role }, index) => (
-        <ProjectCard key={index} title={title} tech={tech} desc={desc} img={img} src={src} role={role} index={index} />
-      ))}
-    </section >
+    <section className='w-full pt-20 pb-6 px-12 md:px-24'>
+      <AboutSection />
+      <div id="portfolio" className='mt-20 grid grid-rows-6 grid-flow-col gap-6 md:grid-flow-row md:grid-rows-3 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3'>
+        {projects.map(({ title, img, src, desc, tech, role }, index) => (
+          <ProjectCard key={index} title={title} tech={tech} desc={desc} img={img} src={src} role={role} index={index} />
+        ))}
+      </div >
+    </section>
   )
 }
 

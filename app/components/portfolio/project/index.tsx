@@ -11,7 +11,7 @@ const ProjectCard = ({ title, img, src, desc, tech, index, role }: ProjectCardTy
     // glass
     <div
       ref={cardRef}
-      className={`group relative flex flex-col opacity-0 w-full h-auto min-h-[465px] max-h-full text-white self-stretch
+      className={`group relative flex flex-col opacity-0 w-full h-auto min-h-[465px] max-h-full text-base-300 self-stretch
       transition-all ease-in-out duration-500 ${isVisible ? `animate-fadeInUp delay-[${index * 2000}ms]` : ''}`}
     >
       <div className="flex flex-col transition-all ease-in-out duration-500 rounded-lg bg-secondary-content/75 group-active:bg-secondary/95 group-active:scale-90  group-hover:bg-secondary/85 group-hover:drop-shadow-2xl group-hover:scale-95 h-full">

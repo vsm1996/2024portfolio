@@ -12,7 +12,7 @@ const Hero = () => {
   const [sectionRef, isVisible] = useIntersectionObserver();
 
   return (
-    <section ref={sectionRef} id='about' className='relative w-full bg-gradient-to-b from-primary-content to-accent-content text-white pb-16 md:pb-12' style={{ clipPath: 'polygon(0 0, 100% 0%, 100% 79%, 0 100%)' }}>
+    <section ref={sectionRef} id='about' className='relative w-full bg-gradient-to-b from-primary-content to-accent-content text-base-300 pb-16 md:pb-12' style={{ clipPath: 'polygon(0 0, 100% 0%, 100% 79%, 0 100%)' }}>
       <Navbar />
       <div className={`opacity-0 px-12 mt-12 pb-16 lg:px-24 lg:pt-24 lg:pb-36 flex flex-col items-center justify-between lg:flex-row  ${isVisible ? `animate-fadeInRight` : ''}`}>
         {/* gap-4 if adding about section back */}
@@ -29,7 +29,7 @@ const Hero = () => {
             Mission — to explore the intersection of art and technology.</p> */}
         </div>
 
-        <Link href='/assets/res/vanessa-martin-resume.docx' download="VanessaMartin_Resume.docx" aria-label="Button to download Vanessa's Resume" className='p-4 text-2xl text-nowrap border rounded-[16px] mt-4 lg:mt-0 ease-in-out duration-300 animate-bounce hover:text-gold-base hover:border-current hover:drop-shadow-lg hover:transition-all active:scale-95'>My Resume</Link>
+        <Link href='/assets/res/vanessa-martin-resume.docx' download="VanessaMartin_Resume.docx" aria-label="Button to download Vanessa's Resume" className='p-4 text-2xl text-nowrap border rounded-[16px] mt-4 lg:mt-0 xl:mr-28 ease-in-out duration-300 animate-bounce hover:text-gold-base hover:border-current hover:drop-shadow-lg hover:transition-all active:scale-95'>My Resume</Link>
 
       </div>
       {/* <Image src={Waves} alt="" className='w-full absolute top-0 left-0' /> */}

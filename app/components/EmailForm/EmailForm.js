@@ -61,7 +61,7 @@ const ContactUs = () => {
     // border border-t-2 border-l-2 border-r-2 border-b-0 rounded-xl rounded-b-none 
     <section 
       ref={sectionRef} 
-      className={`w-full opacity-0 mx-auto mt-14 flex flex-col items-center text-white pt-64 pb-16 bg-gradient-to-b from-accent-content to-primary-content
+      className={`w-full opacity-0 mx-auto mt-14 flex flex-col items-center text-base-300 pt-64 pb-16 bg-gradient-to-b from-accent-content to-primary-content
         ${isVisible ? `animate-fadeInUp` : ''}
         `} 
       id='contact' 
