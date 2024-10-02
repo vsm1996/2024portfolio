@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section ref={sectionRef} id='about' className='relative w-full bg-gradient-to-b from-primary-content to-accent-content text-base-300 pb-16 md:pb-12' style={{ clipPath: 'polygon(0 0, 100% 0%, 100% 79%, 0 100%)' }}>
       <Navbar />
-      <div className={`opacity-0 px-12 mt-12 pb-16 lg:px-24 lg:pt-24 lg:pb-36 flex flex-col items-center justify-between lg:flex-row  ${isVisible ? `animate-fadeInRight` : ''}`}>
+      <div className={`opacity-0 px-12 mt-32 pb-32 lg:px-24 lg:pt-20 lg:pb-40 flex flex-col items-center justify-between lg:flex-row  ${isVisible ? `animate-fadeInRight` : ''}`}>
         {/* gap-4 if adding about section back */}
         <div className='group flex flex-col items-center text-center mt-6 mb-8 lg:mb-0 gap-2 lg:m-0 lg:items-start'>
           <h1 className='text-7xl mb-4 lg:w-1/4 lg:text-9xl font-bold text-balance'>

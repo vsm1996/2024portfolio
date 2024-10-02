@@ -29,7 +29,6 @@ const ContactUs = () => {
 
     emailjs.sendForm('service_e9qathj', 'template_u7s451w', form.current, '_hJ5jDJM8i0Pf1CvS')
       .then((result) => {
-        console.log(result.text)
         setAlert('Thank you!')
         setTimeout(()=>{
           setAlert('')

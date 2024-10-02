@@ -5,7 +5,6 @@ import { useIntersectionObserver } from '@/app/utlis/hooks/useIntersectionObserv
 const AboutSection = () => {
   const [sectionRef, isVisible] = useIntersectionObserver();
 
-  console.log(sectionRef, isVisible)
   return (
     <section ref={sectionRef}
       className={`group w-full pb-8 px-2 lg:px-24 mt-5 mb-12 flex flex-col items-center text-base-300 opacity-0 transition-all ease-in-out duration-500 
