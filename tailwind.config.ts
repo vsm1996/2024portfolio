@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from 'tailwindcss/colors';
 
 const config: Config = {
   mode: 'jit',
@@ -22,6 +23,9 @@ const config: Config = {
           dark: '#FFC00A',
           darker: '#FFBE00',
         },
+        indigo: colors.indigo,
+        gray: colors.gray,
+        black: colors.black,
       },
       keyframes: {
         fadeIn: {
@@ -80,6 +84,28 @@ const config: Config = {
   daisyui: {
     themes: [
       {
+        'indigo-grey-black': {
+          'base-300': colors.gray[800],   // Borders or panels
+          'base-200': colors.gray[900],   // Slightly lighter background
+          'base-100': colors.black,       // Base background (default body)
+          'neutral-content': colors.gray[100], // Text on neutral backgrounds
+          'neutral': colors.gray[800],      // Neutral backgrounds
+          'accent-content': colors.gray[900], // Text on accent elements
+          'accent': colors.indigo[300],     // Accent highlights (optional elements)
+          'primary-content': colors.gray[100], // Text on primary buttons
+          'primary': colors.indigo[500],      // Main action color
+          'primary-focus': colors.indigo[600], // Active state
+          'secondary': colors.gray[500],    // Secondary elements (e.g., cards)
+          'secondary-focus': colors.gray[600],
+          'secondary-content': colors.black,  // Text on secondary buttons
+          'accent-focus': colors.indigo[400],
+          'neutral-focus': colors.gray[900],
+          'base-content': colors.gray[100],   // Default text color
+          'info': colors.indigo[400],       // Info messages
+          'success': colors.indigo[600],    // Success messages
+          'warning': colors.gray[700],      // Warning messages
+          'error': colors.indigo[800],      // Error messages
+        },
         'international-klein-blue': {
           'base-300': '#ebf5ff',
           'base-200': '#dbebff',

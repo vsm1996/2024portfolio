@@ -16,7 +16,7 @@ const projects: ProjectType[] = [
   {
     title: 'Soka Gakkai - Internet Practitioners',
     desc: 'A social media site for a global Buddhist organization.',
-    tech: ['NextJS 14', 'Tailwind', 'DaisyUI', 'Prisma', 'Node', 'Vercel'],
+    tech: ['NextJS 14', 'Tailwind', 'DaisyUI', 'Prisma', 'Node', 'Vercel', 'SQL'],
     img: '/assets/img/sgip.png',
     role: 'Full-Stack',
     src: 'https://sgip.vercel.app/',

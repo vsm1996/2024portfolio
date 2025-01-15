@@ -13,7 +13,7 @@ const AboutSection = () => {
       <h2 className='w-full text-center text-2xl mb-4 transition-all duration-300 hover:underline'>
         I&apos;m a Full-stack Developer based in the Bay Area.
       </h2>
-      <h3 className='w-full md:w-2/5 text-center text-lg transition-all duration-300 hover:scale-105 mb-6'>
+      <h3 className='w-full md:w-2/5 text-center text-lg transition-all duration-300 hover:scale-105 mb-6 text-balance'>
         My passion is crafting responsive, intuitive UI/UX and building secure, high-performance back-end systems.
         My mission — to explore the intersection of art and technology, blending creativity with functionality.
       </h3>
